@@ -1,0 +1,5 @@
+/Users/dmitrij/Projects/laba7/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/dmitrij/Projects/laba7/bin/Debug/laba7.exe.mdb
+/Users/dmitrij/Projects/laba7/bin/Debug/laba7.exe
+/Users/dmitrij/Projects/laba7/obj/x86/Debug/laba7.exe
+/Users/dmitrij/Projects/laba7/obj/x86/Debug/laba7.exe.mdb
