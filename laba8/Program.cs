@@ -148,13 +148,13 @@ namespace laba8
 			int k = int.Parse(Console.ReadLine());
 			Console.WriteLine("Введите номер ячейки:");
 			int m = int.Parse(Console.ReadLine());
-			if (k % 2 == 0 && m % 2 == 0)
+			if (k % 2 == 0 && m % 2 == 0 || k % 2 != 0 && m % 2 != 0)
 			{
-				Console.WriteLine("Цвет ячейки - белый");
-			}
-			else
-			{ 
 				Console.WriteLine("Цвет ячейки - черный");
+			}
+			else if (k % 2 != 0 && m % 2 == 0 || k % 2 == 0 && m % 2 != 0)
+			{ 
+				Console.WriteLine("Цвет ячейки - белый");
 			}
 			vibor();
 		}
@@ -168,18 +168,28 @@ namespace laba8
 			int k2 = int.Parse(Console.ReadLine());
 			Console.WriteLine("Введите номер второй ячейки:");
 			int m2 = int.Parse(Console.ReadLine());
-			if (k1 % 2 == 0 && m1 % 2 == 0 && k2 % 2 == 0 && m2 % 2 == 0)
+			int result = 0;
+			int result1 = 0;
+			if (k1 % 2 == 0 && m1 % 2 == 0 || k1 % 2 != 0 && m1 % 2 != 0)
 			{
-				Console.WriteLine("Обе белые");
+				result = 1;
 			}
-			else if (k1 % 2 != 0 && m1 % 2 != 0 && k2 % 2 != 0 && m2 % 2 != 0)
+			else if (k1 % 2 != 0 && m1 % 2 == 0 || k1 % 2 == 0 && m1 % 2 != 0)
 			{
-				Console.WriteLine("Обе черные");
+				result = 0;
 			}
-			else 
-			{ 
-				Console.WriteLine("Разного цвета");
+			if (k2 % 2 == 0 && m2 % 2 == 0 || k2 % 2 != 0 && m2 % 2 != 0)
+			{
+				result1 = 1;
 			}
+			else if (k2 % 2 != 0 && m2 % 2 == 0 || k2 % 2 == 0 && m2 % 2 != 0)
+			{
+				result1 = 0;
+			}
+			if (result == result1)
+			{
+				Console.WriteLine("Одинаковые");
+			} else Console.WriteLine("Рызные");
 			vibor();
 		}
 		static void twelfth()
