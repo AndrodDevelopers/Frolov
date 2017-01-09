@@ -31,18 +31,29 @@ namespace laba10
 			}
 			//Начало 1.1
 			Console.WriteLine();
+			//Массив интервала
 			Console.WriteLine("Введите интервал от:");
 			int a = int.Parse(Console.ReadLine());
 			Console.WriteLine("До:");
 			int b = int.Parse(Console.ReadLine());
+			int[] chisla = new int[b - a + 1];
+			for (int i = a; i <= b; i++)
+			{
+				chisla[i - a] = i;
+			}
+			//Конец массив интервала
+			Console.WriteLine();
 			Console.WriteLine("Заменим все значения на 0 которые попадают в интервал от " + a + " до " + b + ":");
 			for (int i = 0; i < n; i++)
 			{
-				if (i >= (a - 1) && i <= (b - 1))
+				for (int j = 0; j < chisla.Length - 1; j++)
 				{
-					mass[i] = 0;
-					Console.Write(" " + mass[i]);
-				} else Console.Write(" " + mass[i]);
+					if (mass[i] == chisla[j])
+					{
+						mass[i] = 0;
+					}
+				}
+				Console.Write(" " + mass[i]);
 			}
 			Console.WriteLine();
 			//Конец 1.1; Начало 1.2
@@ -116,7 +127,7 @@ namespace laba10
 			Console.WriteLine("Сумма элементов в интервале от " + a + " до " + b + ":");
 			for (int i = 0; i < n; i++)
 			{
-				if (i >= (a - 1) && i <= (b - 1))
+				if (mass[i] >= a && mass[i] <= b)
 				{
 					result3 += mass[i];
 				}
@@ -140,7 +151,7 @@ namespace laba10
 			Console.WriteLine("Сумма элементов вне интервала от " + a + " до " + b + ":");
 			for (int i = 0; i < n; i++)
 			{
-				if (i < (a - 1) || i > (b - 1))
+				if (mass[i] <= a || mass[i] >= b)
 				{
 					result5 += mass[i];
 				}
