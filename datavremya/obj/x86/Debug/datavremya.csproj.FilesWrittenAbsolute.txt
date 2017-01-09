@@ -1,0 +1,5 @@
+/Users/dmitrij/Projects/datavremya/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/dmitrij/Projects/datavremya/bin/Debug/datavremya.exe.mdb
+/Users/dmitrij/Projects/datavremya/bin/Debug/datavremya.exe
+/Users/dmitrij/Projects/datavremya/obj/x86/Debug/datavremya.exe
+/Users/dmitrij/Projects/datavremya/obj/x86/Debug/datavremya.exe.mdb
