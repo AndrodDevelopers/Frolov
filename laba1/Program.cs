@@ -29,6 +29,11 @@ namespace laba1
 			tri.Print();
 			tri.Perim();
 			tri.Plos();
+			tri.plusminus();
+			tri.proverka();
+			tri.mnoj();
+			string stroka = tri.KString();
+			Console.WriteLine(stroka);
 			vibor();
 		}
 		static void second()
@@ -41,6 +46,11 @@ namespace laba1
 			rec.Print();
 			rec.Perim();
 			rec.Plos();
+			rec.plusminus();
+			rec.proverka();
+			rec.mnoj();
+			string stroka = rec.KString();
+			Console.WriteLine(stroka);
 			vibor();
 		}
 		static void third()
@@ -65,6 +75,9 @@ namespace laba1
 			mass2.SortMass();
 			mass3.SortMass();
 			mass4.SortMass();
+			mass3.plusminus();
+			mass3.proverka();
+			mass3.mnoj();
 			vibor();
 		}
 		static void fourth()
@@ -75,6 +88,8 @@ namespace laba1
 			dmass.vvod();
 			dmass.vivod();
 			dmass.chislo();
+			dmass.plusminus();
+			dmass.mnoj();
 			vibor();
 		}
 

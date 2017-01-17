@@ -21,5 +21,34 @@ namespace laba1
 		{
 			Console.WriteLine("Площадь треугольника равна {0}", a * b);
 		}
+		public void plusminus()
+		{
+			a++;
+			b++;
+			Console.WriteLine("Длины сторон: {0}, {1}", a, b);
+			a--;
+			b--;
+			Console.WriteLine("Длины сторон: {0}, {1}", a, b);
+		}
+		public void proverka()
+		{
+			if (a == b)
+			{
+				Console.WriteLine("Квадрат!");
+			}
+			else Console.WriteLine("Не квадрат!");
+		}
+		public void mnoj()
+		{
+			Console.WriteLine("Введите число: ");
+			int t = int.Parse(Console.ReadLine());
+			a *= t;
+			b *= t;
+			Console.WriteLine("Домножили: {0}, {1}", a, b);
+		}
+		public string KString()
+		{
+			return "Стороны: " + a + ", " + b + " ";
+		}
 	}
 }

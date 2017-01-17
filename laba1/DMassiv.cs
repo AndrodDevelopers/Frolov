@@ -42,5 +42,37 @@ namespace laba1
 				Console.WriteLine(" " + IntArray[i, stolb - 1]);
 			}
 		}
+		public void plusminus()
+		{
+			for (int i = 0; i < n; i++, Console.WriteLine())
+			{
+				for (int j = 0; j < n; j++)
+				{
+					IntArray[i, j] += 1;
+					Console.Write(" " + IntArray[i, j]);
+				}
+			}
+			Console.WriteLine();
+			for (int i = 0; i < n; i++, Console.WriteLine())
+			{
+				for (int j = 0; j < n; j++)
+				{
+					IntArray[i, j] -= 1;
+					Console.Write(" " + IntArray[i, j]);
+				}
+
+			}
+		}
+		public void mnoj()
+		{
+			for (int i = 0; i < n; i++, Console.WriteLine())
+			{
+				for (int j = 0; j < n; j++)
+				{
+					IntArray[i, j] *= 2;
+					Console.Write(" " + IntArray[i, j]);
+				}
+			}
+		}
 	}
 }

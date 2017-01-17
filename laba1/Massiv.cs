@@ -66,5 +66,45 @@ namespace laba1
 			}
 			Console.WriteLine();
 		}
+		public void plusminus()
+		{
+			for (int i = 0; i < IntArray.Length; i++)
+			{
+				IntArray[i] += 1;
+				Console.Write(" " + IntArray[i]);
+			}
+			Console.WriteLine();
+			for (int i = 0; i < IntArray.Length; i++)
+			{
+				IntArray[i] -= 1;
+				Console.Write(" " + IntArray[i]);
+			}
+		}
+		public void proverka()
+		{
+			int sum = 0;
+			for (int i = 1; i < IntArray.Length; i++)
+			{
+				if (IntArray[i] > IntArray[i - 1])
+				{
+					sum++;
+				}
+			}
+			if (sum == IntArray.Length - 1)
+			{
+				Console.WriteLine("Упорядочен");
+			}
+			else Console.WriteLine("Не Упорядочен");
+		}
+		public void mnoj()
+		{
+			Console.WriteLine("Введите число: ");
+			int t = int.Parse(Console.ReadLine());
+			for (int i = 0; i < IntArray.Length; i++)
+			{
+				IntArray[i] *= t;
+				Console.Write(" " + IntArray[i]);
+			}
+		}
 	}
 }
